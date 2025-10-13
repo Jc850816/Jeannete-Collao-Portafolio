@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Profesional - Jeannete Collao</title>
+  <style>
+    /* Estilos generales */
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f4f6f9; color: #333; }
+    header { background: linear-gradient(135deg, #2c3e50, #2980b9); color: white; padding: 40px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin-top: 10px; font-size: 1.2rem; }
+
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #2c3e50; margin-bottom: 20px; font-size: 1.8rem; text-align: center; }
+
+    /* Tarjetas de proyectos */
+    .proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s ease; }
+    .card:hover { transform: scale(1.03); }
+    .card h3 { margin-top: 0; color: #2980b9; }
+    .card p { line-height: 1.5; }
+
+    /* Contacto */
+    ul.contacto { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    ul.contacto li { background: white; padding: 10px 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    ul.contacto a { color: #2980b9; text-decoration: none; font-weight: bold; }
+    ul.contacto a:hover { text-decoration: underline; }
+
+    footer { text-align: center; padding: 20px; background: #2c3e50; color: white; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portafolio Profesional</h1>
+    <p><strong>Jeannete Collao</strong> · Ingeniería en Control de Gestión y Análisis de Datos</p>
+  </header>
+
+  <section>
+    <h2>📘 Presentación Personal</h2>
+    <p style="text-align:center; max-width: 700px; margin:auto;">
+      Soy <strong>Jeannete Collao</strong>, profesional en <em>Ingeniería en Control de Gestión y Análisis de Datos</em> (Kibernum, 2025).
+      Me especializo en análisis financiero, diseño de KPIs y visualización de datos con <strong>Power BI, Excel avanzado y Python</strong>.
+      Mi objetivo es transformar datos en información estratégica que apoye la toma de decisiones y mejore la gestión empresarial.
+    </p>
+  </section>
+
+  <section>
+    <h2>🧩 Proyectos Destacados</h2>
+    <div class="proyectos">
+      <div class="card">
+        <h3>📊 Dashboard de Control Presupuestario</h3>
+        <p><strong>Objetivo:</strong> Optimizar el control financiero y detectar desviaciones en tiempo real.</p>
+        <p><strong>Tecnologías:</strong> Power BI, Excel Avanzado.</p>
+        <p><strong>Reflexión:</strong> Aprendí a integrar datos en reportes interactivos útiles para la gestión estratégica.</p>
+      </div>
+
+      <div class="card">
+        <h3>📈 Análisis de Ventas con Python y Pandas</h3>
+        <p><strong>Objetivo:</strong> Identificar patrones y tendencias en las ventas para apoyar decisiones comerciales.</p>
+        <p><strong>Tecnologías:</strong> Python, Pandas, Matplotlib.</p>
+        <p><strong>Reflexión:</strong> Reforcé mis habilidades en programación y descubrí el valor de la analítica de datos en la gestión de clientes.</p>
+      </div>
+
+      <div class="card">
+        <h3>📌 Indicadores KPI para Control de Gestión</h3>
+        <p><strong>Objetivo:</strong> Medir y monitorear el cumplimiento de metas estratégicas.</p>
+        <p><strong>Tecnologías:</strong> Excel, Power BI.</p>
+        <p><strong>Reflexión:</strong> Mejoré mi capacidad para vincular métricas operativas con objetivos estratégicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📬 Contacto Profesional</h2>
+    <ul class="contacto">
+      <li><a href="mailto:jeannete.collao@example.com">📧 Email</a></li>
+      <li><a href="https://linkedin.com/in/jeannete-collao" target="_blank">🔗 LinkedIn</a></li>
+      <li><a href="https://github.com/jeannete-collao" target="_blank">💻 GitHub</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Jeannete Collao · Kibernum
+  </footer>
+</body>
+</html>
