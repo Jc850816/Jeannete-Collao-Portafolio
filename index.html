@@ -1,87 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Profesional - Jeannete Collao</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portafolio Profesional - Jeannette Collao</title>
+  <meta name="description" content="Portafolio profesional de Jeannette Alexandra Collao Agüero, Ingeniera de Ejecución en Control de Gestión, Analista de Datos Junior y Docente Técnico Profesional.">
   <style>
-    /* Estilos generales */
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f4f6f9; color: #333; }
-    header { background: linear-gradient(135deg, #2c3e50, #2980b9); color: white; padding: 40px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin-top: 10px; font-size: 1.2rem; }
-
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    h2 { color: #2c3e50; margin-bottom: 20px; font-size: 1.8rem; text-align: center; }
-
-    /* Tarjetas de proyectos */
-    .proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s ease; }
-    .card:hover { transform: scale(1.03); }
-    .card h3 { margin-top: 0; color: #2980b9; }
-    .card p { line-height: 1.5; }
-
-    /* Contacto */
-    ul.contacto { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-    ul.contacto li { background: white; padding: 10px 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    ul.contacto a { color: #2980b9; text-decoration: none; font-weight: bold; }
-    ul.contacto a:hover { text-decoration: underline; }
-
-    footer { text-align: center; padding: 20px; background: #2c3e50; color: white; margin-top: 30px; }
+    :root{
+      --accent:#4b0082;
+      --bg:#f8f7fc;
+      --card:#ffffff;
+      --muted:#5a5a6e;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:#1a1a2e;line-height:1.6}
+    header{background:linear-gradient(90deg,var(--accent),#7c4dc4);color:white;padding:30px 20px}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    .nav-link{color:white;text-decoration:none;font-weight:600;transition:opacity .2s}
+    .nav-link:hover{opacity:.85}
+    .btn{display:inline-block;background:white;color:var(--accent);padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600;transition:all .2s}
+    .btn:hover{background:#eceaf7}
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 4px 14px rgba(0,0,0,0.05);margin-bottom:16px}
+    h1,h2,h3,h4{color:var(--accent)}
+    .avatar{width:120px;height:120px;border-radius:50%;background:#eceaf7;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:36px;font-weight:700;margin-right:20px}
+    .profile{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+    .tech{background:#f0ecf8;padding:5px 10px;border-radius:8px;font-size:13px;color:var(--accent)}
+    .projects{display:grid;gap:20px}
+    footer{text-align:center;padding:20px;color:var(--muted);font-size:14px;border-top:1px solid #e2e2e2;margin-top:30px}
+    img.project-img{max-width:100%;border-radius:10px;margin-top:10px}
   </style>
 </head>
 <body>
   <header>
-    <h1>Portafolio Profesional</h1>
-    <p><strong>Jeannete Collao</strong> · Ingeniería en Control de Gestión y Análisis de Datos</p>
+    <div class="container">
+      <nav>
+        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link" href="#proyectos">Proyectos</a>
+        <a class="nav-link" href="#habilidades">Habilidades</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <div style="flex:1"></div>
+        <a class="btn" href="https://jc850816.github.io" target="_blank">Ver Portafolio Online</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>📘 Presentación Personal</h2>
-    <p style="text-align:center; max-width: 700px; margin:auto;">
-      Soy <strong>Jeannete Collao</strong>, profesional en <em>Ingeniería en Control de Gestión y Análisis de Datos</em> (Kibernum, 2025).
-      Me especializo en análisis financiero, diseño de KPIs y visualización de datos con <strong>Power BI, Excel avanzado y Python</strong>.
-      Mi objetivo es transformar datos en información estratégica que apoye la toma de decisiones y mejore la gestión empresarial.
-    </p>
-  </section>
-
-  <section>
-    <h2>🧩 Proyectos Destacados</h2>
-    <div class="proyectos">
-      <div class="card">
-        <h3>📊 Dashboard de Control Presupuestario</h3>
-        <p><strong>Objetivo:</strong> Optimizar el control financiero y detectar desviaciones en tiempo real.</p>
-        <p><strong>Tecnologías:</strong> Power BI, Excel Avanzado.</p>
-        <p><strong>Reflexión:</strong> Aprendí a integrar datos en reportes interactivos útiles para la gestión estratégica.</p>
+  <main class="container">
+    <section id="sobre-mi" class="card">
+      <div class="profile">
+        <div class="avatar">JC</div>
+        <div>
+          <h1>Jeannette Alexandra Collao Agüero</h1>
+          <p><strong>Ingeniera de Ejecución en Control de Gestión | Docente Técnico Profesional | Analista de Datos Junior</strong></p>
+          <p>Profesional con formación en administración, gestión y análisis de datos. Experiencia transversal en control administrativo, docencia técnico-profesional y análisis de información. Apasionada por la mejora continua, el uso de herramientas digitales y el aprendizaje colaborativo.</p>
+          <p>📍 Iquique, Chile | ✉ <a href="mailto:jeannettecollao20@gmail.com">jeannettecollao20@gmail.com</a> | 💼 <a href="https://www.linkedin.com/in/jeannette-collao" target="_blank">LinkedIn</a> | 🖥 <a href="https://github.com/Jc850816" target="_blank">GitHub</a></p>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>📈 Análisis de Ventas con Python y Pandas</h3>
-        <p><strong>Objetivo:</strong> Identificar patrones y tendencias en las ventas para apoyar decisiones comerciales.</p>
-        <p><strong>Tecnologías:</strong> Python, Pandas, Matplotlib.</p>
-        <p><strong>Reflexión:</strong> Reforcé mis habilidades en programación y descubrí el valor de la analítica de datos en la gestión de clientes.</p>
+    <section id="proyectos">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects">
+
+        <article class="card">
+          <h3>Proyecto 1: Panel de Control Administrativo - REDSALUD</h3>
+          <p><strong>Descripción:</strong> Desarrollo de informes de gestión y análisis de cuentas en Excel y Power BI, optimizando el control presupuestario y la toma de decisiones.</p>
+          <p><strong>Objetivos:</strong> Mejorar la visibilidad de datos financieros y automatizar procesos manuales.</p>
+          <p><strong>Tecnologías:</strong> Excel Avanzado, Power BI, G-Suite.</p>
+          <p><strong>Reflexión:</strong> Fortalecí mis habilidades en análisis de datos y visualización, logrando reportes más eficientes para la organización.</p>
+        </article>
+
+        <article class="card">
+          <h3>Proyecto 2: Gestión Educativa y Docencia Técnico Profesional</h3>
+          <p><strong>Descripción:</strong> Diseño y ejecución de clases interactivas en las áreas de administración, contabilidad y gestión de personas, aplicando metodologías activas y herramientas digitales.</p>
+          <p><strong>Objetivos:</strong> Fomentar el aprendizaje práctico y las competencias laborales en estudiantes EPJA y técnico-profesionales.</p>
+          <p><strong>Tecnologías:</strong> G-Suite, PowerPoint, Excel, Meet, Canva.</p>
+          <p><strong>Reflexión:</strong> He aprendido a combinar la docencia con el enfoque analítico, aportando innovación educativa y acompañamiento efectivo.</p>
+        </article>
+
+        <article class="card">
+          <h3>Proyecto 3: Bootcamp Ingeniería de Datos</h3>
+          <p><strong>Descripción:</strong> Participación en proyectos de automatización de datos, ETL y visualización usando Python, SQL y Power BI.</p>
+          <p><strong>Objetivos:</strong> Aplicar metodologías de análisis y transformar datos en información útil para la gestión.</p>
+          <p><strong>Tecnologías:</strong> Python, SQL, Power BI, Pandas.</p>
+          <p><strong>Reflexión:</strong> Consolidé mis bases en ingeniería de datos y reforcé mi pensamiento lógico y analítico.</p>
+        </article>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>📌 Indicadores KPI para Control de Gestión</h3>
-        <p><strong>Objetivo:</strong> Medir y monitorear el cumplimiento de metas estratégicas.</p>
-        <p><strong>Tecnologías:</strong> Excel, Power BI.</p>
-        <p><strong>Reflexión:</strong> Mejoré mi capacidad para vincular métricas operativas con objetivos estratégicos.</p>
-      </div>
-    </div>
-  </section>
+    <section id="habilidades" class="card">
+      <h2>Habilidades Técnicas y Personales</h2>
+      <ul>
+        <li><strong>Gestión y Control:</strong> planificación, control presupuestario, contabilidad, remuneraciones.</li>
+        <li><strong>Análisis de Datos:</strong> Excel avanzado, Power BI, SQL (básico), Python (básico).</li>
+        <li><strong>Educación:</strong> docencia técnico-profesional, metodologías activas, acompañamiento EPJA.</li>
+        <li><strong>Herramientas:</strong> Office, G-Suite, Defontana, PJUD, Meet/Zoom/Teams.</li>
+      </ul>
 
-  <section>
-    <h2>📬 Contacto Profesional</h2>
-    <ul class="contacto">
-      <li><a href="mailto:jeannete.collao@example.com">📧 Email</a></li>
-      <li><a href="https://linkedin.com/in/jeannete-collao" target="_blank">🔗 LinkedIn</a></li>
-      <li><a href="https://github.com/jeannete-collao" target="_blank">💻 GitHub</a></li>
-    </ul>
-  </section>
+      <h3>Competencias Personales</h3>
+      <ul>
+        <li>Liderazgo y trabajo colaborativo.</li>
+        <li>Comunicación efectiva y empatía.</li>
+        <li>Orientación al logro y resolución de problemas.</li>
+        <li>Ética, compromiso y responsabilidad.</li>
+        <li>Innovación y aprendizaje continuo.</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="card">
+      <h2>Contacto y Publicación</h2>
+      <p>📩 <a href="mailto:jeannettecollao20@gmail.com">jeannettecollao20@gmail.com</a><br>
+         🌐 <a href="https://www.linkedin.com/in/jeannette-collao" target="_blank">linkedin.com/in/jeannette-collao</a><br>
+         💻 <a href="https://github.com/Jc850816" target="_blank">github.com/Jc850816</a></p>
+      <p>Este portafolio está diseñado con un estilo formal y corporativo, listo para publicarse en GitHub Pages.</p>
+    </section>
+
+  </main>
 
   <footer>
-    © 2025 Jeannete Collao · Kibernum
+    <p>© 2025 Jeannette Alexandra Collao Agüero — Portafolio Profesional</p>
   </footer>
 </body>
 </html>
